@@ -1,0 +1,16 @@
+PODS:
+  - WCPlugin (0.1.0)
+
+DEPENDENCIES:
+  - WCPlugin (from `../`)
+
+EXTERNAL SOURCES:
+  WCPlugin:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WCPlugin: f1999e0d2524c623811dc640cae88ab853f3aabe
+
+PODFILE CHECKSUM: b01f7481def7d43f0a6198b3eb68b8855d7c6f6d
+
+COCOAPODS: 1.7.5
