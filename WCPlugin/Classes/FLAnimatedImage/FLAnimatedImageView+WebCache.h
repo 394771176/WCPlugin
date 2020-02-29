@@ -6,13 +6,17 @@
  * file that was distributed with this source code.
  */
 
-#import "SDWebImageCompat.h"
+//#import "SDWebImageCompat.h"
+#import <WCModule/SDWebImageCompat.h>
 
 #if SD_UIKIT
 
+#import <WCModule/SDWebImage.h>
+
 #import "FLAnimatedImageView.h"
 
-#import "SDWebImageManager.h"
+#import <WCModule/UIImage+GIF.h>
+#import <WCModule/NSData+ImageContentType.h>
 
 /**
  *  FLAnimatedImage is not a subclass of UIImage, so it's not possible to store it into the memory cache currently. However, for performance issue and cell reuse on FLAnimatedImageView, we use associate object to bind a FLAnimatedImage into UIImage when an animated GIF image load. For most cases, you don't need to touch this.

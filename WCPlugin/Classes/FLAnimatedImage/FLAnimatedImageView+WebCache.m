@@ -7,13 +7,9 @@
  */
 
 #import "FLAnimatedImageView+WebCache.h"
+#import "objc/runtime.h"
 
 #if SD_UIKIT
-#import "objc/runtime.h"
-#import "UIView+WebCacheOperation.h"
-#import "UIView+WebCache.h"
-#import "NSData+ImageContentType.h"
-#import "UIImageView+WebCache.h"
 
 @implementation UIImage (FLAnimatedImage)
 

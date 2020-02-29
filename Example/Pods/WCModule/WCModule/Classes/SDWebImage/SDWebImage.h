@@ -9,6 +9,7 @@
 #define SDWebImage_h
 
 #import "SDWebImageManager.h"
+#import "UIView+WebCache.h"
 #import "UIImageView+WebCache.h"
 #import "UIButton+WebCache.h"
 
