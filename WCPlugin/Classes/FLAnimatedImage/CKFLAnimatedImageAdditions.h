@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 //#import <FLAnimatedImage/FLAnimatedImage.h>
-#import "FLAnimatedImage.h"
+#import "FLAnimatedImageView.h"
 
 @interface FLAnimatedImage (CLFix)
 

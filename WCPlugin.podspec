@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
     fl.source_files = [
     'WCPlugin/Classes/FLAnimatedImage/*',
     ]
-    fl.framework = 'ImageIO', 'MobileCoreServices', 'QuartzCore'
-    fl.dependency = 'WCModule/SDWebImage'
+    fl.frameworks = 'ImageIO', 'MobileCoreServices', 'QuartzCore'
+    fl.dependency 'WCModule/SDWebImage'
   end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

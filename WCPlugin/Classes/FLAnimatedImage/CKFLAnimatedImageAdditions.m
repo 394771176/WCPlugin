@@ -45,7 +45,10 @@
 + (UIImage *)NEWpredrawnImageFromImage:(UIImage *)imageToPredraw
 {
     NSArray *array = [[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."];
-    NSString *sysVersion = [array safeObjectAtIndex:0];
+    NSString *sysVersion = nil;
+    if (array.count) {
+        sysVersion = array.firstObject;
+    }
     //判断10.0版本以上不解码 GIF
     if ([sysVersion integerValue] >= 10) {
         return imageToPredraw;
