@@ -28,9 +28,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = [
-    'WCPlugin/Classes/*.h',
-  ]
+  s.source_files = 'WCPlugin/Classes/*.h'
   
   # s.resource_bundles = {
   #   'WCPlugin' => ['WCPlugin/Assets/*.png']
