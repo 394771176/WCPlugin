@@ -2,8 +2,10 @@ PODS:
   - WCModule/SDWebImage (0.1.4)
   - WCPlugin (0.1.0):
     - WCPlugin/FLAnimatedImage (= 0.1.0)
+    - WCPlugin/MBProgressHUD (= 0.1.0)
   - WCPlugin/FLAnimatedImage (0.1.0):
     - WCModule/SDWebImage
+  - WCPlugin/MBProgressHUD (0.1.0)
 
 DEPENDENCIES:
   - WCPlugin (from `../`)
@@ -18,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   WCModule: 8be8f032b4ba4265e5d347ce56651bdcb63a9fe8
-  WCPlugin: d719c5794df007a944f906d5cd4a79bb452d434c
+  WCPlugin: a2f231086fda9df1c857d2cf1c45df214fa99798
 
 PODFILE CHECKSUM: 27bf70277c2da6b475fa62af215b23cc2e6650a1
 

@@ -35,6 +35,12 @@
 
         ]
       }
+    },
+    {
+      "name": "MBProgressHUD",
+      "source_files": [
+        "WCPlugin/Classes/MBProgressHUD/*"
+      ]
     }
   ]
 }

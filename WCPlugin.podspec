@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WCPlugin'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'WCPlugin.'
 
 # This description is used to generate tags and improve search results.
@@ -42,7 +42,15 @@ Pod::Spec.new do |s|
     fl.dependency 'WCModule/SDWebImage'
   end
 
+  s.subspec 'MBProgressHUD' do |hud|
+    hud.source_files = [
+    'WCPlugin/Classes/MBProgressHUD/*',
+    ]
+    hud.frameworks = 'CoreGraphics'
+    hud.resources = 'WCPlugin/Classes/*.bundle'
+  end
+
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit'
+  s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

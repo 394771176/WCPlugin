@@ -14,6 +14,8 @@
 #import "FLAnimatedImage.h"
 #import "FLAnimatedImageView+WebCache.h"
 #import "FLAnimatedImageView.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUDAdditions.h"
 
 FOUNDATION_EXPORT double WCPluginVersionNumber;
 FOUNDATION_EXPORT const unsigned char WCPluginVersionString[];
