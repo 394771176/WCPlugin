@@ -123,7 +123,7 @@
 {
     NSArray *subviews = [[[UIApplication sharedApplication].delegate window] subviews];
     for (UIView *subview in subviews) {
-        if ([subview isKindOfClass:[MBProgressHUD class]] && subview.tag != DEBUG_ANALYTICS_TAG && subview.tag != DEBUG_REFER_ANALYTICS_TAG) {
+        if ([subview isKindOfClass:[MBProgressHUD class]]) {
             MBProgressHUD *hud = (MBProgressHUD *)subview;
             return hud;
         }
