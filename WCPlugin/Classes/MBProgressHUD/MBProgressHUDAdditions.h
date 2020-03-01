@@ -11,14 +11,16 @@
 
 @interface MBProgressHUD (VendorAdditions)
 
-+ (MBProgressHUD *)showHUDMessageInWindow:(NSString *)msg;
-+ (MBProgressHUD *)showHUDMessageInWindow:(NSString *)msg textOffset:(CGFloat)offset;
++ (MBProgressHUD *)findCurrentHUD;
 
-+ (MBProgressHUD *)showHUDErrorHintInWindow:(NSString *)msg;
-+ (MBProgressHUD *)showHUDSuccessHintInWindow:(NSString *)msg;
-+ (MBProgressHUD *)showHUDNetworkHintInWindow:(NSString *)msg;
++ (void)showHUDMessageInWindow:(NSString *)msg;
++ (void)showHUDMessageInWindow:(NSString *)msg textOffset:(CGFloat)offset;
 
-+ (MBProgressHUD *)showHUDInWindowWithImage:(NSString *)imageName andMessage:(NSString *)msg;
++ (void)showHUDErrorHintInWindow:(NSString *)msg;
++ (void)showHUDSuccessHintInWindow:(NSString *)msg;
++ (void)showHUDNetworkHintInWindow:(NSString *)msg;
+
++ (void)showHUDInWindowWithImage:(NSString *)imageName andMessage:(NSString *)msg;
 
 #pragma mark - loading时 HUD 需要手动stop
 

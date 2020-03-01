@@ -18,12 +18,12 @@
 
 @implementation MBProgressHUD (VendorAdditions)
 
-+ (MBProgressHUD *)showHUDMessageInWindow:(NSString *)msg
++ (void)showHUDMessageInWindow:(NSString *)msg
 {
     return [self showHUDMessageInWindow:msg textOffset:0];
 }
 
-+ (MBProgressHUD *)showHUDMessageInWindow:(NSString *)msg textOffset:(CGFloat)offset
++ (void)showHUDMessageInWindow:(NSString *)msg textOffset:(CGFloat)offset
 {
     MBProgressHUD *hud = [self HUD];
     hud.mode = MBProgressHUDModeText;
@@ -34,10 +34,9 @@
     hud.yOffset = offset;
     [hud show:YES];
     [hud hide:YES afterDelay:2];
-    return hud;
 }
 
-+ (MBProgressHUD *)showHUDErrorHintInWindow:(NSString *)msg
++ (void)showHUDErrorHintInWindow:(NSString *)msg
 {
     MBProgressHUD *hud = [self HUD];
     hud.customView = [[UIImageView alloc] initWithImage:[self bundleImageWithName:@"37x-Error"]];
@@ -46,10 +45,9 @@
     hud.labelText = msg;
     [hud show:YES];
     [hud hide:YES afterDelay:1.5f];
-    return hud;
 }
 
-+ (MBProgressHUD *)showHUDSuccessHintInWindow:(NSString *)msg
++ (void)showHUDSuccessHintInWindow:(NSString *)msg
 {
     MBProgressHUD *hud = [self HUD];
     hud.customView = [[UIImageView alloc] initWithImage:[self bundleImageWithName:@"37x-Success"]];
@@ -58,10 +56,9 @@
     hud.labelText = msg;
     [hud show:YES];
     [hud hide:YES afterDelay:1.5f];
-    return hud;
 }
 
-+ (MBProgressHUD *)showHUDNetworkHintInWindow:(NSString *)msg
++ (void)showHUDNetworkHintInWindow:(NSString *)msg
 {
     MBProgressHUD *hud = [self HUD];
     hud.customView = [[UIImageView alloc] initWithImage:[self bundleImageWithName:@"37x-Error"]];
@@ -70,10 +67,9 @@
     hud.labelText = msg;
     [hud show:YES];
     [hud hide:YES afterDelay:1.5f];
-    return hud;
 }
 
-+ (MBProgressHUD *)showHUDInWindowWithImage:(NSString *)imageName andMessage:(NSString *)msg
++ (void)showHUDInWindowWithImage:(NSString *)imageName andMessage:(NSString *)msg
 {
     MBProgressHUD *hud = [self HUD];
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
@@ -82,7 +78,6 @@
     hud.labelText = msg;
     [hud show:YES];
     [hud hide:YES afterDelay:1.5f];
-    return hud;
 }
 
 #pragma mark - loading时 HUD 需要手动stop

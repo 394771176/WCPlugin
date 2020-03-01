@@ -136,14 +136,14 @@
 		27661B32D20CBF4BBD525335D2869CA3 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = WCModule/Classes/SDWebImage/Core/SDWebImageCompat.m; sourceTree = "<group>"; };
 		2A8A11F53E44873819E0129F98ED2951 /* Pods-WCPlugin_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WCPlugin_Example-umbrella.h"; sourceTree = "<group>"; };
 		2AC756A01C44E7851BDA9A2634F01AA7 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "WCModule/Classes/SDWebImage/Core/NSData+ImageContentType.h"; sourceTree = "<group>"; };
-		3013F192FD63A1348C96D1017927AB0A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3013F192FD63A1348C96D1017927AB0A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		32570C15FC341822F6D2D6FECCA062F9 /* Pods-WCPlugin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WCPlugin_Example-dummy.m"; sourceTree = "<group>"; };
 		32C981A6A9E9C1B3A80141813A161DF6 /* SDWebImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoder.m; path = WCModule/Classes/SDWebImage/Core/SDWebImageCoder.m; sourceTree = "<group>"; };
 		360BFEF728DAD05A930A9462702F01AC /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = WCModule/Classes/SDWebImage/Core/SDWebImageCompat.h; sourceTree = "<group>"; };
 		3759E34BBE97F6CCA32564DC8A21564F /* Pods-WCPlugin_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WCPlugin_Example-Info.plist"; sourceTree = "<group>"; };
 		3BBE3B6DF980A064C8A15443461A320B /* WCModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WCModule-dummy.m"; sourceTree = "<group>"; };
 		400DCCBDAA6A542FC7DB2D65C79063B9 /* SDWebImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageGIFCoder.m; path = WCModule/Classes/SDWebImage/Core/SDWebImageGIFCoder.m; sourceTree = "<group>"; };
-		4058D0AD2383A8F6AF555F64E9AB49DB /* WCPlugin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WCPlugin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4058D0AD2383A8F6AF555F64E9AB49DB /* WCPlugin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WCPlugin.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		436EED21016DF7F5A3F548CE7103E87F /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = WCModule/Classes/SDWebImage/Core/SDWebImageManager.m; sourceTree = "<group>"; };
 		445E45A2B764D1544A084DCFE330280C /* WCModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCModule-prefix.pch"; sourceTree = "<group>"; };
 		45579D693FBC1BED36725582CCB4A4D8 /* FLAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImage.m; path = WCPlugin/Classes/FLAnimatedImage/FLAnimatedImage.m; sourceTree = "<group>"; };
@@ -153,11 +153,12 @@
 		554F09696EEFD57E6659045C67105B23 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = WCModule/Classes/SDWebImage/Core/SDImageCache.m; sourceTree = "<group>"; };
 		5881DA59C05057C058A419C67CDFF1C5 /* SDWebImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCodersManager.m; path = WCModule/Classes/SDWebImage/Core/SDWebImageCodersManager.m; sourceTree = "<group>"; };
 		5AF68EAA1EE82EEDE07FE71AC968CF3C /* Pods-WCPlugin_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WCPlugin_Example.modulemap"; sourceTree = "<group>"; };
-		5BD82E1614A3FFA7DCDB628A07D83EE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5BD82E1614A3FFA7DCDB628A07D83EE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5ED822603652E2B26D51DFA3D794BF74 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = WCModule/Classes/SDWebImage/Core/SDImageCacheConfig.h; sourceTree = "<group>"; };
 		6041634470D4132F83017E3098803800 /* SDWebImageImageIOCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageImageIOCoder.m; path = WCModule/Classes/SDWebImage/Core/SDWebImageImageIOCoder.m; sourceTree = "<group>"; };
+		60509693240C26580040CFC3 /* WCPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WCPlugin.h; path = WCPlugin/Classes/WCPlugin.h; sourceTree = "<group>"; };
 		61BB96EBA0B34693F20D57558FDA1B79 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "WCModule/Classes/SDWebImage/Core/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
-		650407F6BB853275CA9D24574A7323DD /* Pods_WCPlugin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WCPlugin_Example.framework; path = "Pods-WCPlugin_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		650407F6BB853275CA9D24574A7323DD /* Pods_WCPlugin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WCPlugin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9AD947D3E7D10FBB48C5F428B3719B /* SDWebImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageGIFCoder.h; path = WCModule/Classes/SDWebImage/Core/SDWebImageGIFCoder.h; sourceTree = "<group>"; };
 		6BCA2FC102C3990D4766C14A894EE7E0 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "WCModule/Classes/SDWebImage/Core/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		6F403609B80704D7E6C6866A94F8918E /* FLAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImageView.h; path = WCPlugin/Classes/FLAnimatedImage/FLAnimatedImageView.h; sourceTree = "<group>"; };
@@ -178,11 +179,11 @@
 		919CA3BCE1CE3A44F1184BC4F0E74AA6 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = WCModule/Classes/SDWebImage/Core/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		93CA8375F84BFF45E07BDC4724D9816F /* WCPlugin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCPlugin-umbrella.h"; sourceTree = "<group>"; };
 		944CC3A29C80DBBD443C50ED15975464 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		953A23D0E5AACD641B98D3B235FE1652 /* WCModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WCModule.framework; path = WCModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		953A23D0E5AACD641B98D3B235FE1652 /* WCModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9649B8E651B95D0B30389FB44D38127C /* WCPluginResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WCPluginResource.bundle; path = WCPlugin/Classes/WCPluginResource.bundle; sourceTree = "<group>"; };
 		969AAFB7C93902B5C60EDF315534EFA4 /* WCModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WCModule.modulemap; sourceTree = "<group>"; };
 		9B9EC4A3441F7B952D7981C6ABC07402 /* FLAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLAnimatedImage.h; path = WCPlugin/Classes/FLAnimatedImage/FLAnimatedImage.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DFED4E76197EEF6CFDD4A287E59DE2B /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = WCModule/Classes/SDWebImage/Core/SDImageCache.h; sourceTree = "<group>"; };
 		A3BE0538E1EAED8DFCB6E08BB1BB95D2 /* UIImage+ForceDecode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ForceDecode.m"; path = "WCModule/Classes/SDWebImage/Core/UIImage+ForceDecode.m"; sourceTree = "<group>"; };
 		A511E58293B786ABADDB904EA9E622A9 /* SDWebImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCoder.h; path = WCModule/Classes/SDWebImage/Core/SDWebImageCoder.h; sourceTree = "<group>"; };
@@ -195,7 +196,7 @@
 		B2BC18C96ABC78C0868FF15A9D2A62BB /* NSImage+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+WebCache.m"; path = "WCModule/Classes/SDWebImage/Core/NSImage+WebCache.m"; sourceTree = "<group>"; };
 		B4A08395263581F8B3C48A7616EBB286 /* WCPlugin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WCPlugin.modulemap; sourceTree = "<group>"; };
 		BAFB9181FD5B76D09117D19572C25BF3 /* MBProgressHUDAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBProgressHUDAdditions.h; path = WCPlugin/Classes/MBProgressHUD/MBProgressHUDAdditions.h; sourceTree = "<group>"; };
-		BCCA95DCEF53BFCEE401A88C1D70FE56 /* WCPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WCPlugin.framework; path = WCPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCA95DCEF53BFCEE401A88C1D70FE56 /* WCPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA54E8BACE2EC393A2FDF477CD6D52C /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = WCModule/Classes/SDWebImage/Core/SDWebImageDownloader.h; sourceTree = "<group>"; };
 		BEDD1A0067ED7D53A1B6AC51F828616E /* FLAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImageView.m; path = WCPlugin/Classes/FLAnimatedImage/FLAnimatedImageView.m; sourceTree = "<group>"; };
 		BFA9631F5907E2044E0EEB8FEDD001A0 /* SDWebImageCodersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCodersManager.h; path = WCModule/Classes/SDWebImage/Core/SDWebImageCodersManager.h; sourceTree = "<group>"; };
@@ -341,6 +342,7 @@
 				C70C6BD72E86D3DDEC4BD3084C283231 /* MBProgressHUD */,
 				407637EC892AA5392FED9B481B9F1738 /* Pod */,
 				624448C8C81FF8A3A094645F15FBADC0 /* Support Files */,
+				60509693240C26580040CFC3 /* WCPlugin.h */,
 			);
 			name = WCPlugin;
 			path = ../..;
@@ -422,7 +424,6 @@
 				143EE8B0417A20746F4F5C0ED24A4CA4 /* SDWebImage */,
 				96F34416EEB39DD147C10F29B4CF26EC /* Support Files */,
 			);
-			name = WCModule;
 			path = WCModule;
 			sourceTree = "<group>";
 		};
@@ -828,8 +829,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
