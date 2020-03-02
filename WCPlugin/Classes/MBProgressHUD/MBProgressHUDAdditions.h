@@ -19,7 +19,7 @@
 
 + (void)showHUDErrorHintInWindow:(NSString *)msg;
 + (void)showHUDSuccessHintInWindow:(NSString *)msg;
-+ (void)showHUDNetworkHintInWindow:(NSString *)msg;
++ (void)showHUDNoNetWorkHintInWindow;
 
 + (void)showHUDInWindowWithImage:(NSString *)imageName andMessage:(NSString *)msg;
 

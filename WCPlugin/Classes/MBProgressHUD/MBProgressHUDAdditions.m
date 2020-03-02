@@ -58,13 +58,13 @@
     [hud hide:YES afterDelay:1.5f];
 }
 
-+ (void)showHUDNetworkHintInWindow:(NSString *)msg
++ (void)showHUDNoNetWorkHintInWindow
 {
     MBProgressHUD *hud = [self HUD];
     hud.customView = [[UIImageView alloc] initWithImage:[self bundleImageWithName:@"37x-Error"]];
     hud.mode = MBProgressHUDModeCustomView;
     hud.userInteractionEnabled = NO;
-    hud.labelText = msg;
+    hud.labelText = @"网络异常";
     [hud show:YES];
     [hud hide:YES afterDelay:1.5f];
 }
