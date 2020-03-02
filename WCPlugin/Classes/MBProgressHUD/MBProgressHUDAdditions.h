@@ -12,6 +12,7 @@
 @interface MBProgressHUD (VendorAdditions)
 
 + (MBProgressHUD *)findCurrentHUD;
++ (MBProgressHUD *)findCurrentHUDFromView:(UIView *)view;
 
 + (void)showHUDMessageInWindow:(NSString *)msg;
 + (void)showHUDMessageInWindow:(NSString *)msg textOffset:(CGFloat)offset;
@@ -27,5 +28,7 @@
 + (void)showHUDLoadingMessageInWindow:(NSString *)text;
 + (void)stopHUDLoading;
 + (void)stopLoadingHUD:(NSTimeInterval)delay;
+
++ (void)stopHUDLoadingFormView:(UIView *)view;
 
 @end

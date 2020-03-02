@@ -103,6 +103,14 @@
     [loadingHud hide:YES afterDelay:delay];
 }
 
++ (void)stopHUDLoadingFormView:(UIView *)view
+{
+    MBProgressHUD *loadingHud = [self findCurrentHUDFromView:view];
+    [loadingHud hide:YES afterDelay:0.f];
+}
+
+#pragma mark - base method
+
 + (MBProgressHUD *)HUD
 {
     MBProgressHUD *hud = [self findCurrentHUD];
@@ -116,8 +124,12 @@
 
 + (MBProgressHUD *)findCurrentHUD
 {
-    NSArray *subviews = [[[UIApplication sharedApplication].delegate window] subviews];
-    for (UIView *subview in subviews) {
+    return [self findCurrentHUDFromView:[[UIApplication sharedApplication].delegate window]];
+}
+
++ (MBProgressHUD *)findCurrentHUDFromView:(UIView *)view
+{
+    for (UIView *subview in view.subviews) {
         if ([subview isKindOfClass:[MBProgressHUD class]]) {
             MBProgressHUD *hud = (MBProgressHUD *)subview;
             return hud;
