@@ -28,12 +28,12 @@
     MBProgressHUD *hud = [self HUD];
     hud.mode = MBProgressHUDModeText;
     hud.userInteractionEnabled = NO;
-    hud.labelText = msg;
-    hud.opacity = .7f;
-    hud.margin = 10.f;
+    hud.detailsLabelText = msg;
+    hud.opacity = .6f;
+    hud.margin = 15.f;
+    hud.minSize = CGSizeMake(120, 60);
     hud.yOffset = offset;
-    [hud show:YES];
-    [hud hide:YES afterDelay:2];
+    [self SHOW_HUD:hud];
 }
 
 + (void)showHUDErrorHintInWindow:(NSString *)msg
@@ -42,9 +42,8 @@
     hud.customView = [[UIImageView alloc] initWithImage:[self bundleImageWithName:@"37x-Error"]];
     hud.mode = MBProgressHUDModeCustomView;
     hud.userInteractionEnabled = NO;
-    hud.labelText = msg;
-    [hud show:YES];
-    [hud hide:YES afterDelay:1.5f];
+    hud.detailsLabelText = msg;
+    [self SHOW_HUD:hud];
 }
 
 + (void)showHUDSuccessHintInWindow:(NSString *)msg
@@ -53,9 +52,8 @@
     hud.customView = [[UIImageView alloc] initWithImage:[self bundleImageWithName:@"37x-Success"]];
     hud.mode = MBProgressHUDModeCustomView;
     hud.userInteractionEnabled = NO;
-    hud.labelText = msg;
-    [hud show:YES];
-    [hud hide:YES afterDelay:1.5f];
+    hud.detailsLabelText = msg;
+    [self SHOW_HUD:hud];
 }
 
 + (void)showHUDNoNetworkHintInWindow:(NSString *)msg
@@ -64,9 +62,8 @@
     hud.customView = [[UIImageView alloc] initWithImage:[self bundleImageWithName:@"37x-Error"]];
     hud.mode = MBProgressHUDModeCustomView;
     hud.userInteractionEnabled = NO;
-    hud.labelText = msg;
-    [hud show:YES];
-    [hud hide:YES afterDelay:1.5f];
+    hud.detailsLabelText = msg;
+    [self SHOW_HUD:hud];
 }
 
 + (void)showHUDInWindowWithImage:(NSString *)imageName andMessage:(NSString *)msg
@@ -75,9 +72,18 @@
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
     hud.mode = MBProgressHUDModeCustomView;
     hud.userInteractionEnabled = NO;
-    hud.labelText = msg;
+    hud.detailsLabelText = msg;
+    [self SHOW_HUD:hud];
+}
+
++ (void)SHOW_HUD:(MBProgressHUD *)hud
+{
     [hud show:YES];
-    [hud hide:YES afterDelay:1.5f];
+    if (hud.detailsLabelText.length > 10) {
+        [hud hide:YES afterDelay:2.4f];
+    } else {
+        [hud hide:YES afterDelay:1.8f];
+    }
 }
 
 #pragma mark - loading时 HUD 需要手动stop
@@ -85,8 +91,7 @@
 + (void)showHUDLoadingMessageInWindow:(NSString *)text
 {
     MBProgressHUD *hud = [self HUD];
-    hud.labelText = text;
-    hud.labelFont = [UIFont systemFontOfSize:16.f];
+    hud.detailsLabelText = text;
     hud.userInteractionEnabled = YES;
     hud.mode = MBProgressHUDModeIndeterminate;
 }
@@ -116,6 +121,7 @@
     MBProgressHUD *hud = [self findCurrentHUD];
     if (hud == nil) {
         hud = [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication].delegate window] animated:YES];
+        hud.detailsLabelFont = hud.labelFont;
     } else {
         [hud show:NO];
     }
