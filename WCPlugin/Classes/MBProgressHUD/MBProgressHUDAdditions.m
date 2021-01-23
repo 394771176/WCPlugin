@@ -30,7 +30,7 @@
     hud.userInteractionEnabled = NO;
     hud.detailsLabelText = msg;
     hud.opacity = .7f;
-    hud.margin = 15.f;
+    hud.margin = 12.f;
     hud.minSize = CGSizeMake(100, 50);
     hud.yOffset = offset;
     [self autoHideHUD:hud];
