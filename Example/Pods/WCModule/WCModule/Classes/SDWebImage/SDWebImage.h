@@ -13,4 +13,6 @@
 #import "UIImageView+WebCache.h"
 #import "UIButton+WebCache.h"
 
+#import "UIImage+GIF.h"
+
 #endif /* SDWebImage_h */

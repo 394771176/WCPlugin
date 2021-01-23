@@ -1,6 +1,6 @@
 {
   "name": "WCPlugin",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "summary": "WCPlugin.",
   "description": "常用的第三方UI插件",
   "homepage": "https://github.com/394771176/WCPlugin",
@@ -13,11 +13,12 @@
   },
   "source": {
     "git": "https://github.com/394771176/WCPlugin.git",
-    "tag": "0.1.1"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "8.0"
   },
+  "source_files": "WCPlugin/Classes/*.h",
   "frameworks": [
     "UIKit",
     "Foundation"

@@ -29,11 +29,11 @@
     hud.mode = MBProgressHUDModeText;
     hud.userInteractionEnabled = NO;
     hud.detailsLabelText = msg;
-    hud.opacity = .6f;
+    hud.opacity = .7f;
     hud.margin = 15.f;
-    hud.minSize = CGSizeMake(120, 60);
+    hud.minSize = CGSizeMake(100, 50);
     hud.yOffset = offset;
-    [self SHOW_HUD:hud];
+    [self autoHideHUD:hud];
 }
 
 + (void)showHUDErrorHintInWindow:(NSString *)msg
@@ -43,7 +43,7 @@
     hud.mode = MBProgressHUDModeCustomView;
     hud.userInteractionEnabled = NO;
     hud.detailsLabelText = msg;
-    [self SHOW_HUD:hud];
+    [self autoHideHUD:hud];
 }
 
 + (void)showHUDSuccessHintInWindow:(NSString *)msg
@@ -53,7 +53,7 @@
     hud.mode = MBProgressHUDModeCustomView;
     hud.userInteractionEnabled = NO;
     hud.detailsLabelText = msg;
-    [self SHOW_HUD:hud];
+    [self autoHideHUD:hud];
 }
 
 + (void)showHUDNoNetworkHintInWindow:(NSString *)msg
@@ -63,7 +63,7 @@
     hud.mode = MBProgressHUDModeCustomView;
     hud.userInteractionEnabled = NO;
     hud.detailsLabelText = msg;
-    [self SHOW_HUD:hud];
+    [self autoHideHUD:hud];
 }
 
 + (void)showHUDInWindowWithImage:(NSString *)imageName andMessage:(NSString *)msg
@@ -73,12 +73,11 @@
     hud.mode = MBProgressHUDModeCustomView;
     hud.userInteractionEnabled = NO;
     hud.detailsLabelText = msg;
-    [self SHOW_HUD:hud];
+    [self autoHideHUD:hud];
 }
 
-+ (void)SHOW_HUD:(MBProgressHUD *)hud
++ (void)autoHideHUD:(MBProgressHUD *)hud
 {
-    [hud show:YES];
     if (hud.detailsLabelText.length > 10) {
         [hud hide:YES afterDelay:2.4f];
     } else {

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "WCPlugin.h"
 #import "CKFLAnimatedImageAdditions.h"
 #import "FLAnimatedImage.h"
 #import "FLAnimatedImageView+WebCache.h"
