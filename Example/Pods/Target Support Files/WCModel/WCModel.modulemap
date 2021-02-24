@@ -1,0 +1,6 @@
+framework module WCModel {
+  umbrella header "WCModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

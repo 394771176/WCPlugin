@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WCPlugin'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'WCPlugin.'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,8 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'WCPlugin' => ['WCPlugin/Assets/*.png']
   # }
-
+ 
+ #支付GIF
   s.subspec 'FLAnimatedImage' do |fl|
     fl.source_files = [
     'WCPlugin/Classes/FLAnimatedImage/*',
@@ -41,13 +42,32 @@ Pod::Spec.new do |s|
     fl.frameworks = 'ImageIO', 'MobileCoreServices', 'QuartzCore'
     fl.dependency 'WCModule/SDWebImage'
   end
-
+  
+  #HUD
   s.subspec 'MBProgressHUD' do |hud|
     hud.source_files = [
     'WCPlugin/Classes/MBProgressHUD/*',
     ]
     hud.frameworks = 'CoreGraphics'
     hud.resources = 'WCPlugin/Classes/*.bundle'
+  end
+  
+  #Debug功能组件，便于开发与调试
+  s.subspec 'Debug' do |debug|
+    debug.source_files = [
+    'WCPlugin/Classes/WCDebug/*.h',
+    'WCPlugin/Classes/WCDebug/*/*.h',
+    'WCPlugin/Classes/WCDebug/*/*.m'
+    ]
+    
+    s.public_header_files = [
+       'WCPlugin/Classes/*.h'
+    ]
+    
+    debug.dependency 'WCCategory'
+    debug.dependency 'WCModel/File'
+#      debug.dependency 'WCModel/Plist'
+    debug.dependency 'WCPlugin/MBProgressHUD'
   end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

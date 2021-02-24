@@ -1,17 +1,37 @@
 PODS:
-  - WCModule/SDWebImage (0.1.7)
-  - WCPlugin (0.1.4):
-    - WCPlugin/FLAnimatedImage (= 0.1.4)
-    - WCPlugin/MBProgressHUD (= 0.1.4)
-  - WCPlugin/FLAnimatedImage (0.1.4):
+  - WCCategory (0.1.9):
+    - WCCategory/Define (= 0.1.9)
+    - WCCategory/Foundation (= 0.1.9)
+    - WCCategory/UIKit (= 0.1.9)
+  - WCCategory/Define (0.1.9)
+  - WCCategory/Foundation (0.1.9):
+    - WCCategory/Define
+  - WCCategory/UIKit (0.1.9):
+    - WCCategory/Foundation
+  - WCModel/File (0.1.4):
+    - WCCategory
+    - WCModule/RegexKitLite
+  - WCModule/RegexKitLite (0.1.8)
+  - WCModule/SDWebImage (0.1.8)
+  - WCPlugin (0.1.5):
+    - WCPlugin/Debug (= 0.1.5)
+    - WCPlugin/FLAnimatedImage (= 0.1.5)
+    - WCPlugin/MBProgressHUD (= 0.1.5)
+  - WCPlugin/Debug (0.1.5):
+    - WCCategory
+    - WCModel/File
+    - WCPlugin/MBProgressHUD
+  - WCPlugin/FLAnimatedImage (0.1.5):
     - WCModule/SDWebImage
-  - WCPlugin/MBProgressHUD (0.1.4)
+  - WCPlugin/MBProgressHUD (0.1.5)
 
 DEPENDENCIES:
   - WCPlugin (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://cdn.cocoapods.org/:
+    - WCCategory
+    - WCModel
     - WCModule
 
 EXTERNAL SOURCES:
@@ -19,9 +39,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WCModule: 3d3973710ba356802162bc1f12bd431e6fc2c2db
-  WCPlugin: 3ec791e4c3b47fe0d1d7e26363acc270286db729
+  WCCategory: 4ea3e94f7c9c4a86181d3844b72aaa7cd70596bc
+  WCModel: 268e85e647de422bdf63c01238e5d7938a8ae5e7
+  WCModule: 6efe384ffc2161e1ec7415167ae3571e19c52eff
+  WCPlugin: 04b2ab1cd9f49bd63b91e63f2326e3417cbd301b
 
 PODFILE CHECKSUM: 27bf70277c2da6b475fa62af215b23cc2e6650a1
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.10.0

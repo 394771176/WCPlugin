@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "RegexKitLite.h"
 #import "SDWebImage.h"
 #import "NSButton+WebCache.h"
 #import "NSData+ImageContentType.h"

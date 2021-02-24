@@ -1,6 +1,6 @@
 {
   "name": "WCPlugin",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "summary": "WCPlugin.",
   "description": "常用的第三方UI插件",
   "homepage": "https://github.com/394771176/WCPlugin",
@@ -13,12 +13,15 @@
   },
   "source": {
     "git": "https://github.com/394771176/WCPlugin.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "WCPlugin/Classes/*.h",
+  "public_header_files": [
+    "WCPlugin/Classes/*.h"
+  ],
   "frameworks": [
     "UIKit",
     "Foundation"
@@ -47,6 +50,25 @@
       ],
       "frameworks": "CoreGraphics",
       "resources": "WCPlugin/Classes/*.bundle"
+    },
+    {
+      "name": "Debug",
+      "source_files": [
+        "WCPlugin/Classes/WCDebug/*.h",
+        "WCPlugin/Classes/WCDebug/*/*.h",
+        "WCPlugin/Classes/WCDebug/*/*.m"
+      ],
+      "dependencies": {
+        "WCCategory": [
+
+        ],
+        "WCModel/File": [
+
+        ],
+        "WCPlugin/MBProgressHUD": [
+
+        ]
+      }
     }
   ]
 }
